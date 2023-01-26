@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid black */
+	font-family: cursive;
+}
+
+header {
+	/* border: 2px solid orange; */
+	display: block;
+	position: absolute;
+	width: 90%;
+	height: 20vh;
+	/* top: 10%; */
+	/* left: 5%; */
+	background-image: url(/assets/img/design1_image2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 5% 5%;
+
+}
+
+h1 {
+	display: inline-block;
+	position: fixed;
+	top: 0px;
+	left: 5%;
+	/* left: 5%; */
+	font-size: 2.5em;
+}
+
+header h3 {
+	font-size: 1.5em;
+	display: inline-block;
+	width: 100%;
+	height: 40%;
+	text-align: center;
+	border: 2px solid black;
+	padding: 5px;
+	position: absolute;
+	margin: 20px 0px;
+	top: 85%;
+	color: black;
+}
+
+#logo {
+	width: 100px;
+	height: auto;
+	border: 1px solid black;
+	background-color: white;
+	position: fixed;
+	left: 10vw;
+	top: 50vh;
+	z-index: 3;
+	/* border-radius: 30%; */
+}
+
+main {
+	/* border: 3px solid green; */
+	position: absolute;
+	display: inline-block;
+	width: 70%;
+	height: auto;
+	top: 45vh;
+	right: 5%;
+}
+
+main h4 {
+	font-size: 1.5em;
+}
+
+main p {
+	position: relative;
+	left: 3%;
+	top: 2vh;
+}
+
+main article, main div {
+	/* border: 3px solid pink; */
+	margin-bottom: 5%;
+	font-size: 1.1em;
+}
+
+nav {
+	display: block;
+	/* border: 2px solid red; */
+	position: relative;
+	/* position: absolute; */
+	/* width: 20%; */
+	/* height: 75vh; */
+	/* border: 2px solid red; */
+	top: -10%;
+}
+
+ul {
+	display: inline;
+	position: relative;
+	left: 60%;
+	/* position: absolute; */
+	/* width: 20%; */
+	/* height: auto; */
+	/* border: 3px solid green; */
+	/* top: 28vh; */
+	/* left: 5%; */
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+	background-color: white;
+	border: 2px solid black;
+	margin: 0px 10px;
+	/* margin-bottom: 30%; */
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	/* border: 3px solid blue; */
+	text-align: center;
+	/* margin-bottom: 5%; */
+	width: 100px;
+	/* height: 15px; */
+	background-color: rgb(95, 95, 222);
+	color: white;
+}
+
+a[href="#"]{
+	background-color: green;
+	color: white;
+	z-index: 5;
+}
+
+img[class~="imagen_task1"] {
+	display: none;
+}
+
