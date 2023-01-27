@@ -1,22 +1,33 @@
+/* ===========
+		GENERAL
+	============
+*/
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* border: 1px solid black */
 	font-family: cursive;
 }
 
-header {
-	/* border: 2px solid orange; */
-	display: block;
-	position: relative;
+body {
+	/* border: 3px solid blue; */
 	width: 95%;
-	height: 20vh;
+	height: auto;
+	margin: 0 auto; 
+}
+
+
+header {
+	/* display: block; */
+	position: relative;
+	width: 100%;
+	height: 200px;
 	background-image: url(/assets/img/design1_image1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0px auto;
+	/* border: 5px solid black; */
 
 }
 
@@ -26,35 +37,60 @@ h1 {
 	top: 10%;
 	left: 5%;
 	font-size: 3em;
+	color: aliceblue;
 }
 
-header h3 {
+h2 {
 	display: inline-block;
+	position: relative;
+	top: 210px;
 	width: 100%;
-	height: 20%;
+	height: auto;
 	text-align: center;
 	/* border: 2px solid orange; */
-	position: absolute;
-	margin: 20px 0px;
-	top: 95%;
+	/* margin: 20px 0px; */
+	margin-block: 0;
 	background-color: black;
 	color: white;
 }
 
 #logo {
+	display: inline-block;
+	position: absolute;
+	left: 80vw;
+	top: 150px;
 	width: 100px;
 	height: auto;
 	border: 1px solid black;
 	background-color: white;
-	position: absolute;
-	right: 5%;
-	top: 75%;
 	z-index: 3;
-	/* border-radius: 30%; */
 }
 
-main {
-	/* border: 3px solid green; */
+/* ============
+		NAVBAR
+	=============
+*/
+
+nav {
+	display: inline-block;
+	/* position: absolute; */
+	width: 20%;
+	height: 75vh;
+	/* border: 2px solid red; */
+	top: 28vh;
+}
+
+/*	=============
+		MAIN
+		=============
+*/
+
+body {
+	/* position: relative; */
+}
+
+#div_principal {
+	border: 3px solid green;
 	position: absolute;
 	display: inline-block;
 	width: 70%;
@@ -77,15 +113,6 @@ main article, main div {
 	/* border: 3px solid pink; */
 	margin-bottom: 5%;
 	font-size: 1.1em;
-}
-
-nav {
-	display: inline-block;
-	position: absolute;
-	width: 20%;
-	height: 75vh;
-	/* border: 2px solid red; */
-	top: 28vh;
 }
 
 ul {
