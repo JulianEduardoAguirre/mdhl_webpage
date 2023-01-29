@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="styles/style.css"> -->
+  <!-- <link rel="stylesheet" href="styles/style2.css"> -->
+  <link rel="stylesheet" href="styles/style3.css">
   <title>About MDHL</title>
 </head>
 
@@ -12,19 +15,21 @@
   <header>
     <!--For the logo-->
     <figure>
-      <img src="./assets/img/Logo_Mighty_ducks_01.png" alt="Mighty Ducks Hockey League logo" height="75" width="75">
+      <img src="./assets/img/Logo_Mighty_ducks_01.png" id="logo" alt="Mighty Ducks Hockey League logo" height="75"
+        width="75">
     </figure>
     <h1>Mighty Ducks Hockey League</h1>
+    <h2>About <span id="span_mdhl">MDHL</span></h2>
   </header>
   <nav>
     <ul>
       <li><a href="./index.html">Home</a></li>
-      <li><a href="#">About MDHL</a></li>
-      <li><a href="./contact.html">contact</a></li>
+      <li><a href="#">About <span id="anchor_about">MDHL</span></a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
   </nav>
   <main>
-    <div>
+    <div id="div_principal">
       <!--Me da una advertencia sobre usar un div en lugar de section cuando una section no tiene un encabezado-->
       <article>
         <h3>Mission</h3>
@@ -32,6 +37,7 @@
           learning and playing soccer, with opportunities to learn and practice skills related to the game of
           hockey, specifically those skills around team cooperation and good sportsmanship.
         </p>
+        <!-- <p>dsjklfjdsklfs</p> -->
       </article>
       <article>
         <h3>Vission</h3>
@@ -48,12 +54,11 @@
           parents and previous league members.
         </p>
       </article>
-
     </div>
     <aside>
-      <!--For image 2-->
       <figure>
-        <img src="./assets/img/hockey_2.jpg" height="200" width="200" alt="Full view of a hockey player">
+        <img src="./assets/img/hockey_2.jpg" class="imagen_task1" height="200" width="200"
+          alt="Full view of a hockey player">
       </figure>
     </aside>
   </main>
