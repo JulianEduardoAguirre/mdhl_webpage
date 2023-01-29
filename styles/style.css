@@ -1,8 +1,4 @@
-/* ===========
-		GENERAL
-	============
-*/
-
+/* ===========		GENERAL     	============ */
 * {
 	margin: 0;
 	padding: 0;
@@ -11,7 +7,6 @@
 }
 
 body {
-	/* border: 3px solid blue; */
 	width: 95%;
 	height: auto;
 	margin: 0 auto; 
@@ -20,13 +15,10 @@ body {
 aside {
 	display: none;
 }
-/* ===========
-			HEADER
-		==========
-			*/
+
+/* ===========		HEADER		==========*/
 			
 header {
-	/* display: block; */
 	position: relative;
 	width: 100%;
 	height: 200px;
@@ -34,7 +26,6 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0px auto;
-	/* border: 5px solid black; */
 	
 }
 
@@ -54,8 +45,6 @@ h2 {
 	width: 100%;
 	height: auto;
 	text-align: center;
-	/* border: 2px solid orange; */
-	/* margin: 20px 0px; */
 	margin-block: 0;
 	background-color: black;
 	color: white;
@@ -73,17 +62,13 @@ h2 {
 	z-index: 3;
 }
 
-/* ============
-NAVBAR
-=============
-*/
+/* ============		NAVBAR		============= */
 
 nav {
 	display: inline-block;
 	position: absolute;
 	width: 20%;
 	height: 450px;
-	/* border: 2px solid red; */
 	top: 300px;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -105,24 +90,17 @@ a {
 }
 
 
-/*	=============
-		MAIN
-		=============
-*/
+/*	=============		MAIN		============= */
 main {
 	width: 95%;
 	position: absolute;
 	height: 450px;
-	/* border: 3px solid orange; */
 	top: 300px;
 }
 
-
 #div_principal {
-	/* border: 3px solid green; */
 	position: absolute;
 	width: 75%;
-	/* height: 500px; */
 	left: 25%;
 }
 
@@ -131,7 +109,6 @@ h3 {
 }
 
 article {
-	/* border: 3px solid pink; */
 	margin-bottom: 5%;
 	font-size: 1.1em;
 }
@@ -142,8 +119,6 @@ article p {
 	width: 80%;
 	top: 2vh;
 }
-
-
 
 img[class~="imagen_task1"] {
 	display: none;
