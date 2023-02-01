@@ -109,13 +109,47 @@ main {
 	align-items: center;
 	height: auto;
 	width: 80%;
-	background-color: rgba(200,220,220,0.9);
+	background-color: rgba(220,230,240,0.9);
 	border-radius: 10px;
 	margin: 1vh 0;
 }
 
-#div_principal article{
+.div_secundario {
 	border: 2px solid orange;
 	display: block;
 	width: 95%;
+	padding: 0 2vw;
+	text-align: center;	
+}
+
+main article {
+	border: 2px solid orange;
+	display: block;
+	width: 95%;
+	padding: 0 2vw;
+	text-align: center;
+}
+
+.header1 {
+	/* border: 2px solid orange; */
+	display: block;
+	width: 95%;
+	padding: 0 2vw;
+	padding-bottom: 3vh;
+	text-align: center;
+}
+
+.rules_section {
+	/* border: 2px solid yellowgreen; */
+	/* background-color: aqua; */
+	text-align: start;
+	padding: 0 2vw;
+	padding-bottom: 2vh;
+	width: 95%;
+}
+
+#age_groups {
+	list-style-type: lower-latin;
+	width: 95%;
+	border: 1px solid blue;
 }
