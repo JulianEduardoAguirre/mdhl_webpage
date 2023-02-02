@@ -1,0 +1,207 @@
+/******************************************************************************
+
+												Julián Eduardo Aguirre - Task3
+
+*******************************************************************************
+*/
+
+
+/* ===========		GENERAL		============ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+
+body {
+	width: 98%;
+	height: auto;
+	margin: 0 auto; 
+}
+
+aside {
+	display: none;
+}
+
+span {
+	font-weight: bold;
+}
+
+/* ===========		HEADER		============ */
+header {
+	display: flex;
+	flex-direction: column;
+	background-image: url(../assets/img/design1_image2.jpg);
+}
+
+figure{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	background-image: url(../assets/img/design1_image2.jpg);
+}
+
+#logo {
+	border: 2px solid darkgoldenrod;
+	border-radius: 25%;
+	width: 120px;
+	height: auto;
+	background-color: darkslategrey;
+}
+
+header h1 {
+	border: 2px solid black;
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 5vh;
+	background-color: darkcyan;
+	color: aliceblue;
+	text-shadow: 2px 2px 3px gold;
+}
+
+/* ===========		NAVBAR		============ */
+nav {
+	display: flex;
+	border: 2px solid black;
+	padding: 5px;
+	justify-content: center;
+	background-color: darkslategrey;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+nav ul li {
+	margin: 0px 5px;
+	width: 100px;
+	border: 1px solid darkgoldenrod;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+nav ul li:hover {
+	background-color: darkcyan;
+	transform: scale(1.2);
+	transition-duration: 100ms;
+}
+
+nav ul li a{
+	font-size: 1.2rem;
+	color: white;
+	text-decoration: none;
+}
+
+#anchor_about {
+	display: none;
+}
+
+/* ===========		MAIN		============ */
+main {
+	display: flex;
+	min-height: 75vh;
+	justify-content: center;
+	background-image: url(../assets/img/hockey_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#div_principal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	width: 80%;
+	background-color: rgba(220,230,240,0.9);
+	border-radius: 10px;
+	margin: 1vh 0;
+}
+
+.div_secundario {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 30vh;
+	padding: 0 2vw;
+	text-align: start;
+	justify-content: center;	
+}
+
+section h3{
+	margin-bottom: 1vh;
+}
+
+section ul li,
+section ol li {
+	margin-left: 2.5vw;
+	margin-bottom: 2vh;
+}
+
+main article {
+	display: block;
+	width: 95%;
+	padding: 10px 2vw;
+	text-align: start;
+}
+
+#div_tabla{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+}
+
+table {
+	min-width: 80%;
+	background-color: aliceblue;
+	border-radius: 15px;
+}
+
+table th,
+table td {
+	padding: 5px 15px;
+	text-align: center;
+}
+
+.header1 {
+	display: block;
+	width: 100%;
+	padding: 5vh 2vw;
+	text-align: center;
+}
+
+.header1 h2 {
+	font-size: 2.5em;
+}
+
+/* For contact.html*/
+.datos_contacto {
+	text-align: center;
+}
+
+/* For rules.html*/
+.rules_section {
+	text-align: start;
+	padding: 0 2vw;
+	padding-bottom: 2vh;
+	width: 95%;
+}
+
+#age_groups {
+	list-style-type: lower-latin;
+	width: 95%;
+}
+
+.rules_important {
+	text-decoration: underline;
+}
+
+
+/* For game_info.html*/
+.direct_contact{
+	padding: 18px 0px;
+}
