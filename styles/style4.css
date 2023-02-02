@@ -28,31 +28,40 @@ aside {
 header {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid red;
+	/* border: 2px solid red; */
+	background-image: url(../assets/img/design1_image2.jpg);
+
 }
 
 figure{
 	display: flex;
-	border: 2px solid green;
+	/* border: 2px solid green; */
 	justify-content: center;
 	align-items: center;
-	height: 15vh;
+	height: 30vh;
 	background-image: url(../assets/img/design1_image2.jpg);
 }
 
 #logo {
-	border: 2px solid pink;
-	border-radius: 50%;
-	background-color: bisque;
+	border: 2px solid darkgoldenrod;
+	border-radius: 30%;
+	width: 120px;
+	height: auto;
+	background-color: darkslategrey;
 }
 
 header h1 {
 	border: 2px solid black;
+	font-size: 2.5em;
 	text-align: center;
+	margin-bottom: 5vh;
+	background-color: darkcyan;
+	color: aliceblue;
+	text-shadow: 2px 2px 3px gold;
 }
 
 header h2 {
-	border: 2px solid green;
+	/* border: 2px solid green; */
 	text-align: center;
 	background-color: darkblue;
 }
@@ -60,9 +69,10 @@ header h2 {
 /*			NAVBAR				*/
 nav {
 	display: flex;
-	border: 2px solid blue;
-	height: 40px;
-	justify-content: flex-end;
+	border: 2px solid black;
+	/* height: 40px; */
+	padding: 5px;
+	justify-content: center;
 	background-color: darkslategrey;
 }
 
@@ -75,16 +85,35 @@ nav ul{
 nav ul li {
 	margin: 0px 5px;
 	width: 90px;
-	border: 1px solid white;
+	border: 1px solid darkgoldenrod;
 	text-align: center;
 	border-radius: 5px;
 	padding: 5px;
 }
 
-li a{
+nav ul li:hover {
+	background-color: darkcyan;
+	transform: scale(1.2);
+	transition-duration: 100ms;
+}
+
+nav ul li a{
 	color: white;
 	text-decoration: none;
 }
+
+/* li a:hover{
+	color: darkgoldenrod;
+	text-decoration: none;
+} */
+
+/* #actual{
+display: none;
+}
+
+#actual:hover{
+display: none;
+} */
 
 #anchor_about {
 	display: none;
@@ -93,7 +122,7 @@ li a{
 /*			MAIN			*/
 main {
 	display: flex;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 	min-height: 75vh;
 	justify-content: center;
 	background-image: url(../assets/img/hockey_1.jpg);
@@ -102,7 +131,7 @@ main {
 }
 
 #div_principal {
-	border: 2px solid green;
+	/* border: 2px solid green; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -115,19 +144,29 @@ main {
 }
 
 .div_secundario {
-	border: 2px solid orange;
+	/* border: 2px solid orange; */
 	display: block;
 	width: 95%;
 	padding: 0 2vw;
 	text-align: center;	
 }
 
+section h3{
+	margin-bottom: 1vh;
+}
+
+section ul li,
+section ol li {
+	margin-left: 2.5vw;
+	margin-bottom: 2vh;
+}
+
 main article {
-	border: 2px solid orange;
+	/* border: 2px solid orange; */
 	display: block;
 	width: 95%;
 	padding: 0 2vw;
-	text-align: center;
+	text-align: start;
 }
 
 .header1 {
@@ -151,5 +190,5 @@ main article {
 #age_groups {
 	list-style-type: lower-latin;
 	width: 95%;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 }
