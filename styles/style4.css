@@ -122,12 +122,6 @@ main {
 	margin: 1vh 0;
 }
 
-/* #div_principal h2{
-	width: 100%;
-	text-align: center;
-	border: 1px solid gold;
-} */
-
 .div_secundario {
 	display: flex;
 	flex-direction: column;
