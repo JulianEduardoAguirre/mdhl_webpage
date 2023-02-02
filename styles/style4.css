@@ -169,6 +169,26 @@ main article {
 	text-align: start;
 }
 
+#div_tabla{
+	/* border: 1px solid red; */
+	width: 90%;
+	display: flex;
+	justify-content: center;
+}
+
+table {
+	/* border: 1px solid green; */
+	background-color: aliceblue;
+	border-radius: 15px;
+}
+
+table th,
+table td {
+	/* border: 1px solid orange; */
+	padding: 5px 15px;
+	text-align: center;
+}
+
 .header1 {
 	/* border: 2px solid orange; */
 	display: block;
