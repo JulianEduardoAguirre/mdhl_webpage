@@ -1,11 +1,12 @@
-/*
+/******************************************************************************
 
-Julián Eduardo Aguirre - Task3
+												Julián Eduardo Aguirre - Task3
 
+*******************************************************************************
 */
 
 
-/* ===========		GENERAL     	============ */
+/* ===========		GENERAL		============ */
 * {
 	margin: 0;
 	padding: 0;
@@ -21,21 +22,21 @@ body {
 
 aside {
 	display: none;
-	border: 2px solid brown;
 }
 
-/* HEADER */
+span {
+	font-weight: bold;
+}
+
+/* ===========		HEADER		============ */
 header {
 	display: flex;
 	flex-direction: column;
-	/* border: 2px solid red; */
 	background-image: url(../assets/img/design1_image2.jpg);
-
 }
 
 figure{
 	display: flex;
-	/* border: 2px solid green; */
 	justify-content: center;
 	align-items: center;
 	height: 30vh;
@@ -44,7 +45,7 @@ figure{
 
 #logo {
 	border: 2px solid darkgoldenrod;
-	border-radius: 30%;
+	border-radius: 25%;
 	width: 120px;
 	height: auto;
 	background-color: darkslategrey;
@@ -60,17 +61,10 @@ header h1 {
 	text-shadow: 2px 2px 3px gold;
 }
 
-/* header h2 {
-	border: 2px solid green;
-	text-align: center;
-	background-color: darkblue;
-} */
-
-/*			NAVBAR				*/
+/* ===========		NAVBAR		============ */
 nav {
 	display: flex;
 	border: 2px solid black;
-	/* height: 40px; */
 	padding: 5px;
 	justify-content: center;
 	background-color: darkslategrey;
@@ -84,7 +78,7 @@ nav ul{
 
 nav ul li {
 	margin: 0px 5px;
-	width: 90px;
+	width: 100px;
 	border: 1px solid darkgoldenrod;
 	text-align: center;
 	border-radius: 5px;
@@ -98,43 +92,28 @@ nav ul li:hover {
 }
 
 nav ul li a{
+	font-size: 1.2rem;
 	color: white;
 	text-decoration: none;
 }
-
-/* li a:hover{
-	color: darkgoldenrod;
-	text-decoration: none;
-} */
-
-/* #actual{
-display: none;
-}
-
-#actual:hover{
-display: none;
-} */
 
 #anchor_about {
 	display: none;
 }
 
-/*			MAIN			*/
+/* ===========		MAIN		============ */
 main {
 	display: flex;
-	/* border: 2px solid red; */
 	min-height: 75vh;
 	justify-content: center;
 	background-image: url(../assets/img/hockey_1.jpg);
-	background-size: contain;
-	background-repeat: repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #div_principal {
-	/* border: 2px solid green; */
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-around; */
 	align-items: center;
 	height: auto;
 	width: 80%;
@@ -143,32 +122,20 @@ main {
 	margin: 1vh 0;
 }
 
-#titulo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 10%;
-	border: 2px solid pink;
-}
-
-#div_principal h2{
-	/* border: 1px solid gold; */
+/* #div_principal h2{
 	width: 100%;
 	text-align: center;
-}
+	border: 1px solid gold;
+} */
 
 .div_secundario {
 	display: flex;
 	flex-direction: column;
-	/* border: 2px solid orange; */
-	/* display: block; */
 	width: 100%;
 	min-height: 30vh;
 	padding: 0 2vw;
 	text-align: start;
 	justify-content: center;	
-	z-index: 10;
 }
 
 section h3{
@@ -182,7 +149,6 @@ section ol li {
 }
 
 main article {
-	/* border: 2px solid orange; */
 	display: block;
 	width: 95%;
 	padding: 10px 2vw;
@@ -190,43 +156,41 @@ main article {
 }
 
 #div_tabla{
-	/* border: 1px solid red; */
 	width: 90%;
 	display: flex;
 	justify-content: center;
 }
 
 table {
-	/* border: 1px solid green; */
 	min-width: 80%;
 	background-color: aliceblue;
 	border-radius: 15px;
 }
 
-/* tr {
-	padding-bottom: 10vh;
-	border: 2px solid blue;
-} */
-
 table th,
 table td {
-	/* border: 1px solid orange; */
 	padding: 5px 15px;
 	text-align: center;
 }
 
 .header1 {
-	/* border: 2px solid green; */
 	display: block;
 	width: 100%;
-	padding: 0 2vw;
-	padding-bottom: 3vh;
+	padding: 5vh 2vw;
 	text-align: center;
 }
 
+.header1 h2 {
+	font-size: 2.5em;
+}
+
+/* For contact.html*/
+.datos_contacto {
+	text-align: center;
+}
+
+/* For rules.html*/
 .rules_section {
-	/* border: 2px solid yellowgreen; */
-	/* background-color: aqua; */
 	text-align: start;
 	padding: 0 2vw;
 	padding-bottom: 2vh;
@@ -236,17 +200,14 @@ table td {
 #age_groups {
 	list-style-type: lower-latin;
 	width: 95%;
-	/* border: 1px solid blue; */
 }
 
 .rules_important {
 	text-decoration: underline;
 }
 
-.datos_contacto {
-	text-align: center;
-}
 
-span {
-	font-weight: bold;
+/* For game_info.html*/
+.direct_contact{
+	padding: 18px 0px;
 }
