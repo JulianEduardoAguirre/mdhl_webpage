@@ -18,25 +18,26 @@
   </header>
 	<nav>
     <ul>
-      <li id="actual"><a href="#">Home</a></li>
+      <li><a href="./index.html">Home</a></li>
 			<li><a href="./about.html">About <span id="anchor_about">MDHL</span></a></li>
 			<li><a href="./game_info.html">Schedule</a></li>
 			<li><a href="./rules.html">Rules</a></li>
+			<li id="actual"><a href="#">Register</a></li>
 			<li><a href="./contact.html">Contact</a></li>
 		</ul>
 	</nav>
   <main>
     <div id="div_principal">
       <section class="header1">
-        <h2>Upcoming Events</h2>
+        <h2>Register here</h2>
       </section>
-      <div class="div_secundario">
+      <div class="div_secundario div_form">
 				<form action="show_data.html" method="GET">
-					<fieldset>
+					<fieldset class="personal_data">
 						<legend>Datos personales</legend>
 						<label for="first_name">Player's First name:
 							<input type="text" name="first_name" id="first_name">
-						</label><br>
+						</label>
 						<label for="last_name">Last name: 
 							<input type="text" name="last_name" id="last_name">
 						</label>
@@ -60,7 +61,7 @@
 						<label for="gender"> Gender:
 							Female: <input type="radio" name="gender" value="female">
 							Male: <input type="radio" name="gender" value="male">
-						</label><br>
+						</label>
 
 						<label for="grade"> Grade:
 							<input type="radio" name="grade" value="0"> Pre-School: 
@@ -78,7 +79,7 @@
 
 					</fieldset>
 
-					<fieldset>
+					<fieldset class="elementary_school">
 						<legend>Which Elementary school do you live near?</legend>
 						
 						<label for="school"> Closest School:
@@ -95,7 +96,7 @@
 
 					</fieldset>
 
-					<fieldset>
+					<fieldset class="field_position">
 						<legend>What position(s) do you normally play? (check all that apply)</legend>
 						<input type="checkbox" name="position" value="forward"> Forward
 						<input type="checkbox" name="position" value="midfield"> Midfield
@@ -103,7 +104,7 @@
 						<input type="checkbox" name="position" value="goalkeeper"> Goalkeeper
 					</fieldset>
 
-					<fieldset>
+					<fieldset class="uniform_size">
 						<legend>Uniform Size:</legend>
 						<input type="checkbox" name="uniform_size" value="ys"> Youth Small
 						<input type="checkbox" name="uniform_size" value="ym"> Youth Medium
@@ -114,7 +115,7 @@
 						<input type="checkbox" name="uniform_size" value="xl"> Extra-Large
 					</fieldset>
 
-					<fieldset>
+					<fieldset class="permission">
 						<legend>Permission to play</legend>
 						<p>
 							I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules
@@ -123,17 +124,19 @@
 							their employees and associated personnel and volunteers, including the facilities used for practices and games,
 							against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing 
 							transported to or from MDHL sponsored activities, which transportation.
-							<span>By entering my name beloy</span>, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge
+						</p>
+						<p>
+							<span>By entering my name below</span>, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge
 							that I have read the cancellation policy and agree to its terms.
 						</p>
-						<label for="terms-and-conditions" type="checkbox" name="terms-and-conditions">
+						<label id="terms_and_conditions" for="terms-and-conditions" type="checkbox" name="terms-and-conditions">
 							<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I agree with the text above
 						</label>
 
 					</fieldset>
 
 
-					<input type="submit">
+					<input class="btn_submit" type="submit">
 				</form>
       </div>
     </div>
