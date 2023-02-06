@@ -34,42 +34,30 @@
       <div class="div_secundario div_form">
 				<form action="show_data.html" method="GET">
 					<fieldset class="personal_data">
-						<legend>Datos personales</legend>
-						<label for="first_name">Player's First name:
-							<input type="text" name="first_name" id="first_name">
-						</label>
-						<label for="last_name">Last name: 
-							<input type="text" name="last_name" id="last_name">
-						</label>
+						<legend>Player information</legend>
+						<label for="first_name">Player's First name: <input type="text" name="first_name" id="first_name"></label>
+						<label for="last_name">Last name: <input type="text" name="last_name" id="last_name"></label>
 
-						<label for="address"> Street Address:
-							<input type="text" id="address" name="address">
-						</label>
+						<label for="address"> Street Address:	<input type="text" id="address" name="address"></label>
 
-						<label for="city"> City: 
-							<input type="text" name="city" id="city">
-						</label>
+						<label for="city"> City: <input type="text" name="city" id="city"></label>
 
-						<label for="zip_code"> Zip Code:
-							<input type="number" name="zip_code" id="zip_code">
-						</label>
+						<label for="zip_code"> Zip Code: <input type="number" name="zip_code" id="zip_code"></label>
 
-						<label for="birth_date"> Birth Date:
-							<input type="date" name="birth_date">
-						</label>
+						<label for="birth_date"> Birth Date: <input type="date" name="birth_date"></label>
 
 						<label for="gender"> Gender:
-							Female: <input type="radio" name="gender" value="female">
-							Male: <input type="radio" name="gender" value="male">
+							<input type="radio" name="gender" value="female">Female
+							<input type="radio" name="gender" value="male">Male
 						</label>
 
 						<label for="grade"> Grade:
-							<input type="radio" name="grade" value="0"> Pre-School: 
-							<input type="radio" name="grade" value="1"> 1st: 
-							<input type="radio" name="grade" value="2"> 2nd: 
-							<input type="radio" name="grade" value="3"> 3rd: 
-							<input type="radio" name="grade" value="4"> 4th: 
-							<input type="radio" name="grade" value="5"> 5th: 
+							<input type="radio" name="grade" value="0"> Pre-School 
+							<input type="radio" name="grade" value="1"> 1st 
+							<input type="radio" name="grade" value="2"> 2nd 
+							<input type="radio" name="grade" value="3"> 3rd 
+							<input type="radio" name="grade" value="4"> 4th 
+							<input type="radio" name="grade" value="5"> 5th 
 						</label>
 
 						<!-- REMOVE THIS AND TURN IT INTO A NEW FIELDSET (MAYBE) -->
@@ -77,6 +65,13 @@
 							<input type="text" name="guardian">
 						</label>
 
+					</fieldset>
+
+					<fieldset class="guardian_data">
+						<legend>Parent/Guardian information</legend>
+						<label for="guardian_first_name">First Name: <input type="text" name="guardian_first_name" id="guardian_first_name" required></label>
+						<label for="guardian_last_name">Last Name: <input type="text" name="guardian_last_name" id="guardian_last_name" required></label>
+						<label for="guardian_tel">Phone Number: <input type="number" name="guardian_tel" id="guardian_tel" required></label>
 					</fieldset>
 
 					<fieldset class="elementary_school">
@@ -105,14 +100,14 @@
 					</fieldset>
 
 					<fieldset class="uniform_size">
-						<legend>Uniform Size:</legend>
-						<input type="checkbox" name="uniform_size" value="ys"> Youth Small
-						<input type="checkbox" name="uniform_size" value="ym"> Youth Medium
-						<input type="checkbox" name="uniform_size" value="yl"> Youth Large
-						<input type="checkbox" name="uniform_size" value="s"> Small
-						<input type="checkbox" name="uniform_size" value="m"> Medium
-						<input type="checkbox" name="uniform_size" value="l"> Large
-						<input type="checkbox" name="uniform_size" value="xl"> Extra-Large
+						<legend>Uniform Size</legend>
+						<input type="radio" name="uniform_size" value="ys"> Youth Small
+						<input type="radio" name="uniform_size" value="ym"> Youth Medium
+						<input type="radio" name="uniform_size" value="yl"> Youth Large
+						<input type="radio" name="uniform_size" value="s"> Small
+						<input type="radio" name="uniform_size" value="m"> Medium
+						<input type="radio" name="uniform_size" value="l"> Large
+						<input type="radio" name="uniform_size" value="xl"> Extra-Large
 					</fieldset>
 
 					<fieldset class="permission">
@@ -130,13 +125,14 @@
 							that I have read the cancellation policy and agree to its terms.
 						</p>
 						<label id="terms_and_conditions" for="terms-and-conditions" type="checkbox" name="terms-and-conditions">
-							<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I agree with the text above
+							<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I grant consent about the exposed above
 						</label>
 
 					</fieldset>
 
-
-					<input class="btn_submit" type="submit">
+					<div class="div_button">
+						<input class="btn_submit" type="submit" value="Send">
+					</div>
 				</form>
       </div>
     </div>

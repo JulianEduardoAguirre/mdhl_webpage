@@ -116,6 +116,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	height: auto;
+	min-width: 500px;
 	width: 80%;
 	background-color: rgba(220,230,240,0.9);
 	border-radius: 10px;
@@ -206,59 +207,79 @@ table td {
 	padding: 18px 0px;
 }
 
-/*Registration form*/
+#maps {
+	border: 1px solid red;
+	display: flex;
+	width: 900px;
+	/* display: flex; */
+}
+
+iframe {
+	border-radius: 15px;
+}
+
+iframe:hover {
+	transform: scale(105%);
+	transition: 200ms;
+}
+
+/*REGISTRATION FORM*/
 .div_form {
 	align-items: center;
 }
 
 form {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	max-width: 720px;
 }
 
 fieldset{
+	/* border: none; */
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	gap: 10px;
+	border-radius: 15px;
+	margin-bottom: 1.5em;
 	width: 100%;
 }
 
 /*Personal Information*/
-.personal_data {
-	background-color: pink;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	padding: 15px;
-}
-
-.personal_data label {
-	margin-left: 15px;
-}
-
 .personal_data input {
 	width: fit-content;
+	/* border: 1px solid red; */
+}
+
+input[type="radio"] {
+	margin-left: 15px;
+	border: 1px solid blue;
 }
 
 /*Elementary school*/
 .elementary_school {
-	background-color: aqua;
-	padding: 15px;
 }
 
 /*Field Position*/
 .field_position {
-	background-color: yellowgreen;
+	display: flex;
+	flex-direction: row;
 	padding: 15px;
 }
 
 /*Uniform size*/
 .uniform_size {
-	background-color: lightsalmon;
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	align-items: baseline;
 }
+
 
 /*Permission*/
 .permission {
-	background-color: tomato;
+	/* background-color: tomato; */
 	padding: 0px 25px;
 	padding-bottom: 30px;
 	display: flex;
@@ -266,7 +287,7 @@ fieldset{
 }
 
 .permission p {
-	margin-bottom: 15px;
+	margin: 15px 0px;
 }
 
 #terms_and_conditions {
@@ -276,12 +297,22 @@ fieldset{
 
 }
 
+.div_button {
+	display: flex;
+	margin: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
 /*Submit Button*/
 .btn_submit {
-	/* justify-content: center; */
-	/* align-content: center; */
-	width: 80px;
+	font-size: 1.2em;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	width: 100px;
 	border-radius: 5px;
 	color: white;
-	background-color: green;
+	border: 2px solid darkgoldenrod;
+	background-color: darkslategray;
 }
