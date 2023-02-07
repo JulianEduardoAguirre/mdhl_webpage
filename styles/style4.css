@@ -282,6 +282,10 @@ form {
 	align-items: center;
 	justify-content: center;
 	max-width: 100%;
+	box-shadow: 1px 1px 3px green;
+	background-color: aliceblue;
+	border-radius: 15px;
+	padding: 10px;
 }
 
 fieldset{
