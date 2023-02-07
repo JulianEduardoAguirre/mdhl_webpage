@@ -101,13 +101,18 @@
 
 					<fieldset class="uniform_size">
 						<legend>Uniform Size</legend>
-						<input type="radio" name="uniform_size" value="ys"> Youth Small
-						<input type="radio" name="uniform_size" value="ym"> Youth Medium
-						<input type="radio" name="uniform_size" value="yl"> Youth Large
-						<input type="radio" name="uniform_size" value="s"> Small
-						<input type="radio" name="uniform_size" value="m"> Medium
-						<input type="radio" name="uniform_size" value="l"> Large
-						<input type="radio" name="uniform_size" value="xl"> Extra-Large
+						<div>
+							<input type="radio" name="uniform_size" value="ys"> Youth Small
+							<input type="radio" name="uniform_size" value="ym"> Youth Medium
+							<input type="radio" name="uniform_size" value="yl"> Youth Large
+						</div>
+						<div>
+							<input type="radio" name="uniform_size" value="s"> Small
+							<input type="radio" name="uniform_size" value="m"> Medium
+							<input type="radio" name="uniform_size" value="l"> Large
+							<input type="radio" name="uniform_size" value="xl"> Extra-Large
+
+						</div>
 					</fieldset>
 
 					<fieldset class="permission">
@@ -124,8 +129,10 @@
 							<span>By entering my name below</span>, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge
 							that I have read the cancellation policy and agree to its terms.
 						</p>
-						<label id="terms_and_conditions" for="terms-and-conditions" type="checkbox" name="terms-and-conditions">
-							<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I grant consent about the exposed above
+						<label id="terms_and_conditions" for="terms-and-conditions" name="terms-and-conditions">
+							<label for="consent_full_name">Full name: <input type="text" name="consent_full_name" id="consent_full_name"></label>
+							<label for="consent_date">Date: <input type="text" name="consent_date" id="consent_name" placeholder="dd/MM/aaaa"></label>
+							<!-- <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I grant consent about the exposed above -->
 						</label>
 
 					</fieldset>

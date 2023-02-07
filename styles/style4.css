@@ -131,6 +131,12 @@ main {
 	padding: 0 2vw;
 	text-align: start;
 	justify-content: center;	
+	/* border: 1px solid red; */
+}
+
+.with_border {
+	border-bottom: 5px double darkgreen;
+	width: 90%;
 }
 
 section h3{
@@ -179,12 +185,12 @@ table td {
 	font-size: 2.5em;
 }
 
-/* For contact.html*/
+/* FOR CONTACT.HTML*/
 .datos_contacto {
 	text-align: center;
 }
 
-/* For rules.html*/
+/* FOR RULES.HTML*/
 .rules_section {
 	text-align: start;
 	padding: 0 2vw;
@@ -202,37 +208,61 @@ table td {
 }
 
 
-/* For game_info.html*/
+/* FOR GAME_INFO.HTML*/
 .direct_contact{
 	padding: 18px 0px;
 }
 
+/*Maps section*/
 #maps {
-	border: 1px solid red;
 	display: flex;
-	width: 900px;
-	/* display: flex; */
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	max-width: 900px;
+	gap: 15px;
+	margin: 25px;
+}
+
+.map_card {
+	box-shadow: 2px 2px 3px gray;
+	background-color: lightgray;
+	text-align: center;
+	border-radius: 25px;
+}
+
+.map_card:hover {
+	transform: scale(1.05);
+	transition: 0.2s;
+	box-shadow: 2px 2px 5px darkgray;
 }
 
 iframe {
-	border-radius: 15px;
+	border-radius: 25px;
+	/* border: 30px solid black; */
+	transform: scale(0.95);
+	box-shadow: 1px 1px 1px 5px darkseagreen;
 }
 
-iframe:hover {
-	transform: scale(105%);
-	transition: 200ms;
+@media only screen and (max-width:1368px) {
+	#how_to_get {
+		margin-left: 10%;
+	}
 }
+
 
 /*REGISTRATION FORM*/
 .div_form {
 	align-items: center;
+	max-width: 100%;
 }
 
 form {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	max-width: 720px;
+	max-width: 100%;
+	/* min-width: 90%; */
+	/* border: 1px solid blue; */
 }
 
 fieldset{
@@ -247,19 +277,11 @@ fieldset{
 }
 
 /*Personal Information*/
-.personal_data input {
-	width: fit-content;
-	/* border: 1px solid red; */
-}
 
 input[type="radio"] {
 	margin-left: 15px;
-	border: 1px solid blue;
 }
 
-/*Elementary school*/
-.elementary_school {
-}
 
 /*Field Position*/
 .field_position {
@@ -272,6 +294,8 @@ input[type="radio"] {
 .uniform_size {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
 	padding: 5px;
 	align-items: baseline;
 }
@@ -291,10 +315,9 @@ input[type="radio"] {
 }
 
 #terms_and_conditions {
-	text-align: center;
-	justify-content: center;
-	border: 1px solid black;
-
+	display: flex;
+	flex-direction: column;
+	width: 50%;
 }
 
 .div_button {
