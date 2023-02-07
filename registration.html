@@ -35,23 +35,23 @@
 				<form action="show_data.html" method="GET">
 					<fieldset class="personal_data">
 						<legend>Player information</legend>
-						<label for="first_name">Player's First name: <input type="text" name="first_name" id="first_name"></label>
-						<label for="last_name">Last name: <input type="text" name="last_name" id="last_name"></label>
+						<label for="first_name">Player's First name: <input type="text" name="first_name" required></label>
+						<label for="last_name">Last name: <input type="text" name="last_name" required></label>
 
-						<label for="address"> Street Address:	<input type="text" id="address" name="address"></label>
+						<label for="address"> Street Address:	<input type="text" id="address" name="address" required></label>
 
-						<label for="city"> City: <input type="text" name="city" id="city"></label>
+						<label for="city"> City: <input type="text" name="city" id="city" required></label>
 
-						<label for="zip_code"> Zip Code: <input type="number" name="zip_code" id="zip_code"></label>
+						<label for="zip_code"> Zip Code: <input type="number" name="zip_code" id="zip_code" required></label>
 
-						<label for="birth_date"> Birth Date: <input type="date" name="birth_date"></label>
+						<label for="birth_date"> Birth Date: <input type="date" name="birth_date" required></label>
 
 						<label for="gender"> Gender:
 							<input type="radio" name="gender" value="female">Female
 							<input type="radio" name="gender" value="male">Male
 						</label>
 
-						<label for="grade"> Grade:
+						<label for="grade" required> Grade:
 							<input type="radio" name="grade" value="0"> Pre-School 
 							<input type="radio" name="grade" value="1"> 1st 
 							<input type="radio" name="grade" value="2"> 2nd 
@@ -61,9 +61,9 @@
 						</label>
 
 						<!-- REMOVE THIS AND TURN IT INTO A NEW FIELDSET (MAYBE) -->
-						<label for="birth_date"> Parent/Guardian Name:
+						<!-- <label for="birth_date"> Parent/Guardian Name:
 							<input type="text" name="guardian">
-						</label>
+						</label> -->
 
 					</fieldset>
 
@@ -71,14 +71,14 @@
 						<legend>Parent/Guardian information</legend>
 						<label for="guardian_first_name">First Name: <input type="text" name="guardian_first_name" id="guardian_first_name" required></label>
 						<label for="guardian_last_name">Last Name: <input type="text" name="guardian_last_name" id="guardian_last_name" required></label>
-						<label for="guardian_tel">Phone Number: <input type="number" name="guardian_tel" id="guardian_tel" required></label>
+						<label for="guardian_tel">Phone Number: <input type="text" name="guardian_tel" id="guardian_tel" required></label>
 					</fieldset>
 
 					<fieldset class="elementary_school">
 						<legend>Which Elementary school do you live near?</legend>
 						
 						<label for="school"> Closest School:
-							<select id="school" name="school">
+							<select id="school" name="school" required>
 								<option value="">(select one)</option>
 								<option value="katzenmaier">AJ Katzenmaier</option>
 								<option value="marjorie">Marjorie P Hart</option>
@@ -130,8 +130,8 @@
 							that I have read the cancellation policy and agree to its terms.
 						</p>
 						<label id="terms_and_conditions" for="terms-and-conditions" name="terms-and-conditions">
-							<label for="consent_full_name">Full name: <input type="text" name="consent_full_name" id="consent_full_name"></label>
-							<label for="consent_date">Date: <input type="text" name="consent_date" id="consent_name" placeholder="dd/MM/aaaa"></label>
+							<label for="consent_full_name">Full name: <input type="text" name="consent_full_name" id="consent_full_name" required></label>
+							<label for="consent_date">Date: <input type="text" name="consent_date" id="consent_name" placeholder="dd-MM-aaaa" required></label>
 							<!-- <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I grant consent about the exposed above -->
 						</label>
 
