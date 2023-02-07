@@ -73,7 +73,8 @@ nav {
 nav ul{
 	display: flex;
 	list-style-type: none;
-	justify-content: space-between;
+	justify-content: center;
+	width: 100%;
 }
 
 nav ul li {
@@ -84,6 +85,23 @@ nav ul li {
 	border-radius: 5px;
 	padding: 5px;
 }
+
+@media screen and (max-width: 675px) {
+	nav {
+		padding: 0;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		width: 100%;
+	}
+
+
+}
+
 
 nav ul li:hover {
 	background-color: darkcyan;
@@ -116,6 +134,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	height: auto;
+	min-width: 500px;
 	width: 80%;
 	background-color: rgba(220,230,240,0.9);
 	border-radius: 10px;
@@ -130,6 +149,12 @@ main {
 	padding: 0 2vw;
 	text-align: start;
 	justify-content: center;	
+	margin-bottom: 5vh;
+}
+
+.with_border {
+	border-bottom: 5px double darkgreen;
+	width: 90%;
 }
 
 section h3{
@@ -149,6 +174,38 @@ main article {
 	text-align: start;
 }
 
+
+
+/* FOR CONTACT.HTML*/
+.datos_contacto {
+	text-align: center;
+	max-width: 75%;
+	background-color: aliceblue;
+	border-radius: 25px;
+	box-shadow: 1px 1px 3px 3px darkgreen;
+	/* border: 2px solid orange */
+}
+
+/* FOR RULES.HTML*/
+.rules_section {
+	text-align: start;
+	padding: 0 2vw;
+	padding-bottom: 2vh;
+	width: 95%;
+}
+
+#age_groups {
+	list-style-type: lower-latin;
+	width: 95%;
+}
+
+.rules_important {
+	text-decoration: underline;
+}
+
+
+/* FOR GAME_INFO.HTML*/
+/*For the schedule table*/
 #div_tabla{
 	width: 90%;
 	display: flex;
@@ -178,30 +235,131 @@ table td {
 	font-size: 2.5em;
 }
 
-/* For contact.html*/
-.datos_contacto {
-	text-align: center;
-}
-
-/* For rules.html*/
-.rules_section {
-	text-align: start;
-	padding: 0 2vw;
-	padding-bottom: 2vh;
-	width: 95%;
-}
-
-#age_groups {
-	list-style-type: lower-latin;
-	width: 95%;
-}
-
-.rules_important {
-	text-decoration: underline;
-}
-
-
-/* For game_info.html*/
+/*Contact with Michael Randall*/
 .direct_contact{
 	padding: 18px 0px;
+}
+
+/*Maps section*/
+#maps {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	max-width: 900px;
+	gap: 15px;
+	margin: 25px;
+}
+
+.map_card {
+	box-shadow: 2px 2px 3px gray;
+	background-color: lightgray;
+	text-align: center;
+	border-radius: 25px;
+}
+
+.map_card:hover {
+	transform: scale(1.05);
+	transition: 0.2s;
+	box-shadow: 2px 2px 5px darkgray;
+}
+
+iframe {
+	border-radius: 25px;
+	transform: scale(0.95);
+	box-shadow: 1px 1px 1px 5px darkseagreen;
+}
+
+@media only screen and (max-width:1368px) {
+	#how_to_get {
+		margin-left: 10%;
+	}
+}
+
+
+/*FOR REGISTRATION.HTML*/
+.div_form {
+	align-items: center;
+	max-width: 100%;
+}
+
+form {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	box-shadow: 1px 1px 3px green;
+	background-color: aliceblue;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+fieldset{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	gap: 10px;
+	border-radius: 15px;
+	margin-bottom: 1.5em;
+	width: 100%;
+}
+
+/*Personal Information*/
+input[type="radio"] {
+	margin-left: 15px;
+}
+
+/*Field Position*/
+.field_position {
+	display: flex;
+	flex-direction: row;
+	padding: 15px;
+}
+
+/*Uniform size*/
+.uniform_size {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 5px;
+	align-items: baseline;
+}
+
+
+/*Permission*/
+.permission {
+	padding: 0px 25px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.permission p {
+	margin: 15px 0px;
+}
+
+#terms_and_conditions {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.div_button {
+	display: flex;
+	margin: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Submit Button*/
+.btn_submit {
+	font-size: 1.2em;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	width: 100px;
+	border-radius: 5px;
+	color: white;
+	border: 2px solid darkgoldenrod;
+	background-color: darkslategray;
 }
