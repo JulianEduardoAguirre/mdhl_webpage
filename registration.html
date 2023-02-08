@@ -35,8 +35,8 @@
 				<form action="show_data.html" method="GET">
 					<fieldset class="personal_data">
 						<legend>Player information</legend>
-						<label for="first_name">Player's First name: <input type="text" name="first_name" required></label>
-						<label for="last_name">Last name: <input type="text" name="last_name" required></label>
+						<label for="first_name">Player's First name: <input type="text" name="first_name" id="first_name" required></label>
+						<label for="last_name">Last name: <input type="text" name="last_name" id="last_name" required></label>
 
 						<label for="address"> Street Address:	<input type="text" id="address" name="address" required></label>
 
@@ -44,14 +44,14 @@
 
 						<label for="zip_code"> Zip Code: <input type="number" name="zip_code" id="zip_code" required></label>
 
-						<label for="birth_date"> Birth Date: <input type="date" name="birth_date" required></label>
+						<label for="birth_date"> Birth Date: <input type="date" name="birth_date" id="birth_date" required></label>
 
 						<label for="gender"> Gender:
 							<input type="radio" name="gender" value="female">Female
 							<input type="radio" name="gender" value="male">Male
 						</label>
 
-						<label for="grade" required> Grade:
+						<label for="grade"> Grade:
 							<input type="radio" name="grade" value="0"> Pre-School 
 							<input type="radio" name="grade" value="1"> 1st 
 							<input type="radio" name="grade" value="2"> 2nd 
@@ -129,11 +129,11 @@
 							<span>By entering my name below</span>, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge
 							that I have read the cancellation policy and agree to its terms.
 						</p>
-						<label id="terms_and_conditions" for="terms-and-conditions" name="terms-and-conditions">
-							<label for="consent_full_name">Full name: <input type="text" name="consent_full_name" id="consent_full_name" required></label>
-							<label for="consent_date">Date: <input type="text" name="consent_date" id="consent_name" placeholder="dd-MM-aaaa" required></label>
+						<div id="terms_and_conditions" for="terms-and-conditions">
+							Full name: <input type="text" name="consent_full_name" id="consent_full_name" required>
+							Date: <input type="text" name="consent_date" id="consent_name" placeholder="dd-MM-aaaa" required>
 							<!-- <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I grant consent about the exposed above -->
-						</label>
+						</div>
 
 					</fieldset>
 
