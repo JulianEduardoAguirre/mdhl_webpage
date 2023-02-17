@@ -46,19 +46,35 @@
 
 						<label for="birth_date"> Birth Date: <input type="date" name="birth_date" id="birth_date" required></label>
 
-						<label for="gender"> Gender:
+						<!-- <label for="gender"> Gender:
 							<input type="radio" name="gender" value="female">Female
 							<input type="radio" name="gender" value="male">Male
-						</label>
+						</label> -->
+						<div>
+							Gender: 
+							<label for="gender_male"><input type="radio" name="gender" id="gender_male"> Male</label>
+							<label for="gender_female"><input type="radio" name="gender" id="gender_female"> Female</label>
+						</div>
 
-						<label for="grade"> Grade:
+						<div>
+							Grade:
+							<label for="grade_pre"><input type="radio" name="grade" id="grade_pre"> Pre-School</label>
+							<label for="grade1"><input type="radio" name="grade" id="grade1"> 1st</label>
+							<label for="grade2"><input type="radio" name="grade" id="grade2"> 2nd</label>
+							<label for="grade3"><input type="radio" name="grade" id="grade3"> 3rd</label>
+							<label for="grade4"><input type="radio" name="grade" id="grade4"> 4th</label>
+							<label for="grade5"><input type="radio" name="grade" id="grade5"> 5th</label>
+
+						</div>
+
+						<!-- <label for="grade"> Grade:
 							<input type="radio" name="grade" value="0"> Pre-School 
 							<input type="radio" name="grade" value="1"> 1st 
 							<input type="radio" name="grade" value="2"> 2nd 
 							<input type="radio" name="grade" value="3"> 3rd 
 							<input type="radio" name="grade" value="4"> 4th 
 							<input type="radio" name="grade" value="5"> 5th 
-						</label>
+						</label> -->
 
 						<!-- REMOVE THIS AND TURN IT INTO A NEW FIELDSET (MAYBE) -->
 						<!-- <label for="birth_date"> Parent/Guardian Name:
@@ -129,7 +145,7 @@
 							<span>By entering my name below</span>, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge
 							that I have read the cancellation policy and agree to its terms.
 						</p>
-						<div id="terms_and_conditions" for="terms-and-conditions">
+						<div id="terms_and_conditions">
 							Full name: <input type="text" name="consent_full_name" id="consent_full_name" required>
 							Date: <input type="text" name="consent_date" id="consent_name" placeholder="dd-MM-aaaa" required>
 							<!-- <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I grant consent about the exposed above -->
